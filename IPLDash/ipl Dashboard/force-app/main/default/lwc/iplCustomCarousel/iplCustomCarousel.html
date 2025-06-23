@@ -1,0 +1,23 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 06-05-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <div class="slds-carousel">
+        <div class="slds-carousel__stage">
+            <div class="slds-carousel__panels" style={carouselPanelsStyle}>
+                <template for:each={carouselList} for:item="item">
+                    <div class="slds-carousel__panel" role="tabpanel" key={item.year}>
+                        <div class="slds-carousel__image">
+                            <img src={item.url} alt={item.altText} />
+                        </div>
+                    </div>
+                </template>
+               
+            </div>
+        </div>
+    </div>
+</template>
