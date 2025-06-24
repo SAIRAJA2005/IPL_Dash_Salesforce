@@ -6,7 +6,7 @@ import iplGlobalStyle from '@salesforce/resourceUrl/iplGlobalStyle'
 import winner2024 from '@salesforce/resourceUrl/winner2024'
 
 export default class IplBanner extends LightningElement {
-    fileName='ipl2024stats.json'
+    fileName = 'ipl2024stats.json'
     winner = winner2024
     carouselList=[]
     ipl2024StatsResponse=[]
